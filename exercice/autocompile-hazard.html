@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>autocompile</title>
+</head>
+<body>
+     <script>
+       const MAX = window.prompt('entre votre intervalle');
+       var atester = Math.round(Math.random() * MAX);
+       var test = Math.round(Math.random() * MAX);
+
+       console.log(atester + " " + test);
+       var iteration  = 1;
+
+       while(test != atester){
+           iteration++;
+           if(test > atester){
+               test = test - 1;
+           }
+           else if (test < atester){
+               test = test + 1;
+           }
+       }
+       console.log(`${iteration} iteration poour la soution`);
+       window.alert(
+           `entre l'intervalle [0 , ${MAX}] \n On a fait ${iteration}\n pour que "${test}" trouve "${atester}"`)
+     </script>
+</body>
+</html>

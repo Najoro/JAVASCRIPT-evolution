@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        
+        var mister = Math.round(Math.random() * 10)
+        var utilisateur = window.prompt('entre un nombe?');
+        var essaye = 3;
+
+        utilisateur = parseInt(utilisateur)
+        
+        while( utilisateur != mister && essaye > 1){
+            essaye --;
+
+            if(utilisateur > mister){
+                window.alert(`${essaye} reste \n chiffre en dessous`);
+            }
+            else if(utilisateur < mister){
+                window.alert(`${essaye} reste \n chiffre au dessus`);
+            }
+            utilisateur = window.prompt('entre un nombe?');
+
+        }
+        if(utilisateur == mister){
+            window.alert('bravo le mister est ' + mister)
+        }else{
+            window.alert('echec \n le mister ' + mister)
+        }
+   
+   </script>
+</body>
+</html>

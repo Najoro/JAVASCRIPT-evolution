@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>JS</title>
+</head>
+<body>
+<script>
+var max = 10000;
+var test = true;
+var listePremier= [];
+var listePasPremier = [];
+var isaPremies = 0;
+var tsyPremier = 0;
+
+function estPremier(nombre){
+      for (var i = 2 ; i < nombre ; i++){
+            if(nombre % i == 0){
+                 test = false;
+                 break;
+            }
+           else
+                 test = true;
+           }
+      return test;
+     }
+
+for(var nombre = 0 ; nombre < max ; nombre ++){
+      if(estPremier(nombre)){
+           var liste = listePremier.push(nombre);
+           isaPremies++;
+      }
+      else{
+            var pas = listePasPremier.push(nombre);
+            tsyPremier++;
+      }
+}
+console.log(`${isaPremies} nombre premier parmie [0 a ${max}] qui sont \n << ${listePremier} >>`);
+console.log(`${tsyPremier} nombre premier parmie [0 a ${max}] qui sont \n << ${listePasPremier} >>`);
+
+</script>
+</body>
+</html>

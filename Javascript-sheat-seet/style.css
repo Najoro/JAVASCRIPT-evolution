@@ -1,0 +1,101 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: monospace;
+  font-style: none;
+}
+body{
+  min-height: 200vh;
+  text-align: center;
+  margin: 10px;
+  color: #fff ;
+}
+.box{
+  background-color: #000;
+  width: 100%;
+  height: 200px;
+  padding: 10px;
+  margin-bottom: 100px;
+  transition: 0.9s;
+  overflow: hidden;
+}
+h4 , p{
+  padding: 10px;
+  margin: 5px;
+}
+p{
+  color: white;
+  font-weight: bold;
+  visibility: hidden;
+  transform: rotatez(30deg);
+  opacity: -1;
+}
+.loko{
+  display: inline-block;
+  position: absolute;
+  top :30px;
+  left: 30px;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 20px;
+}
+.newJS{
+  border-radius: 20px;
+  opacity: 1;
+
+  background-image:linear-gradient(#112FFF , #1122ff , #2233FF) ;
+  transition: 1.4s;
+}
+
+.reponseJS{
+  visibility: visible;
+  transition: 0.7s;
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.fotsyJS{
+  background-color: #000;
+}
+.bodyJS{
+  background-color: #000 ; 
+}
+.divJS{
+  background-color: #fff;
+  color: #000;
+}
+.deplace{
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  position: absolute;
+  transform: translate(-50% , -50%);
+  z-index: -1;
+  border: 1px solid black;
+}
+.deplaceJS{
+  border: 1px solid white;
+}
+.menu{
+  background-color: yellow;
+  color: #000;
+  width: 100%;
+  height: 30px;
+  position: fixed;
+  top: -50px;
+  font-size: large;
+  transition: 0.8s;
+}
+ul{
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+  list-style:none;
+}
+.p_js{
+  opacity: 0;
+  transform: translateX(-400px);
+  transition: 2s ease-in-out;
+}
