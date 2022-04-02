@@ -1,4 +1,4 @@
-///*
+/*
 
 SELECTEUR HTML DOCUMENT
 
@@ -13,6 +13,7 @@ SELECTEUR HTML DOCUMENT
             doc.inherhtml // aficher un elemnt html ne prend pas en compte les balise Html
             doc.inherText // aficher un elemnt html prend compte les balise Html  
             doc.textContaintent //ajouter un element
+            doc.attribute(href) // sibbler l'attribie href
 
 
 //SELECTEUR-LISTE-------------------------------------------------------------------------------------------------------------------------------
