@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Generateur de mots de passe</title>
+     <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+     <div class="contenaire-globale">
+          <input type="text" id="mdp-show" value="Generateur de mots de passe" readonly>
+
+          <div class="contenaire-range">
+               <input type="range" id = "contenue-range" value="8" min="4" max ="24">
+               <input type="text" id = "compte-range" value = "8" readonly>
+          </div>
+
+          <div class="contenaire-checker">
+
+               <input type="checkbox" name="ckeck" id="lowerCase">
+               <label for="lowerCase">a...z</label>
+
+               <input type="checkbox" name="ckeck" id="upperCase">
+               <label for="upperCase">A...Z</label>
+
+               <input type="checkbox" name="ckeck" id="numberCase">
+               <label for="numberCase">0...9</label>
+
+               <input type="checkbox" name="ckeck" id="symboleCase">
+               <label for="symboleCase">!...?</label>
+
+          </div>
+          <button class="btm" id="mdpConfirm">Generer mot de passe</button>
+     </div>
+
+     <script src="./generateur.js"></script>
+</body>
+</html>
+
