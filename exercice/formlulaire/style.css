@@ -3,6 +3,7 @@
   --color2: #fff;
   --color3:rgb(76, 162, 156);
   --color4: #ccc;
+  --color5:rgb(236, 75, 75);
 }
 
 * {
@@ -10,13 +11,12 @@
   padding: 0;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  font-weight: bold;
+  font-weight: normal;
+  outline: none;
 }
 body{
-  background:var(--color1);
+  background:url(./font.jpg);
   color:var(--color2);
-  overflow: hidden;
-
 }
 form{
   background:var(--color3);
@@ -28,6 +28,7 @@ form{
   border-radius: 10px;
   letter-spacing: 1.1px;
   position: relative;
+  box-shadow: 0 0 30px var(--color1);
 }
 form::before{
   content: "N";
@@ -53,15 +54,18 @@ form::before{
   display: flex;
   flex-direction: column;
   margin: 1rem 0;
+  overflow: hidden;
 }
 input[type="text"], input[type="password"]{
   background: var(--color4);
   color: var(--color1);
-  border-radius: 5px;
-  height: 1.5rem;
+  border-radius: 10px;
+  height: 30px;
   padding: 0 10px;
   border: none;
   letter-spacing: 1px;
+  font-size: 1rem;
+  font-weight: normal;
 }
 input[type="submit"]{
   color: var(--color2);
@@ -91,15 +95,56 @@ input[type="submit"]:active{
   transform: translateX(-50%) scale(0.8);
 }
 span{
-  font-size: 12px;
+  font-size: 14px;
   font-weight: normal;
   margin: 0 10px;
+  color: var(--color5);
+  visibility: hidden;
 }
 #progressBarre{
   width: 100%;
   height:7px;
   margin: 4px 0;
-  background: red;
+  background: var(--color5);
   border-radius: 60px;
   display: none;
+  transition: 0.5s linear;
+}
+/*Javascript*****************************************************************/
+.great input{
+  border:2px solid green!important;
+  color: green;
+}
+.great span{
+  visibility: visible !important;
+  font-weight: bold;
+  color: green;
+}
+.error input{
+  border:2px solid var(--color5) !important;
+  color: var(--color5);
+}
+.error span{
+  visibility: visible !important;
+  font-weight: bold;
+}
+.progresseRed{
+  background: red;
+  display: block !important;
+  width: 25% !important;
+}
+.progresseBlue{
+  background: blue !important;
+  display: block !important;
+  width: 50% !important;
+}
+.progresseViolet{
+  background:rgb(196, 42, 196) !important;
+  display: block !important;
+  width: 75% !important;
+}
+.progresseGreen{
+  background:green!important;
+  display: block !important;
+  width: 100% !important;
 }

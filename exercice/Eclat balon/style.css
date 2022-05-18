@@ -1,0 +1,78 @@
+body{
+     margin: 0;
+     padding: 0;
+     overflow: hidden;
+     display: flex;
+     justify-content: center;
+     background: rgba(0, 0, 0, 0.5);
+     
+}
+.contenueJeux{
+     background: rgb(245, 32, 234);
+     min-width: 400px;
+     min-height: 100vh;
+     overflow: hidden;
+     box-shadow: 0px 0px 13px 4px black;
+     position: relative;
+}
+.contenaireBallon{
+     width: 275px;
+     height: 100vh;
+     position: relative;
+     z-index: 1;
+     cursor: crosshair;
+     background: rgb(245, 32, 234);
+}
+main::before{
+     content: "";
+     position: absolute;
+     width: 2px;
+     height: 100vh;
+     background: black;
+}
+main{
+     width: 125px;
+     height: 100vh;
+     position:absolute;
+     top: 0;
+     right: 0;
+     display: flex;
+     z-index: 1000;
+     flex-direction: column;
+     background: rgb(207, 7, 197);
+}
+.btm{
+     width: 100px;
+     padding: 5px;
+     margin:10px auto;
+     border-radius: 10px;
+     background: rgba(13, 13, 224, 0.397);
+     color: #fff;
+}
+.btm:hover{
+     background: rgba(13, 13, 224, 0.979);
+     cursor: pointer;
+}
+#score{
+     text-align: center;
+     font-size: 3.5rem;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+     cursor:not-allowed;
+}
+.ballon{
+     width: 50px;
+     height: 50px;
+     border-radius: 50px;
+     border: 0.5px solid black;
+     position: absolute;
+     top: 100vh;
+     left: var(--left);
+     background: red;
+     animation: anime 8s linear infinite;
+
+}
+@keyframes anime {
+    to{
+         top: -100px;
+    }
+}

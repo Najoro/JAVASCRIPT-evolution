@@ -1,0 +1,104 @@
+:root{
+     --lg_color1:black;
+     --lg_color2:yellow;
+}
+body{
+     margin: 0;
+     padding: 0;
+
+}
+.contenaire{
+     height: 60vh;
+     width: 500px;
+     margin: 20px auto;
+     background: linear-gradient(to right , var(--lg_color1) 50% , var(--lg_color2) 50%);
+     position: relative;
+     text-align: center;
+     box-shadow:  1px 1px 11px 1px var(--lg_color1);
+     overflow: hidden;
+}
+h1{
+     margin: 0;
+     color:var(--lg_color2);
+     mix-blend-mode: difference;
+     position: absolute;
+     font-size: 2.3em;
+     font-family: sans-serif;
+     text-transform: uppercase;
+     width: 400px;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50% , -50%);
+     animation : mietsika linear infinite 6s;
+}
+ @keyframes mietsika {
+     0%{
+       transform: translate(-30% , 300%);
+     }
+     20%{
+          transform: translate(-30% , 0%);
+     }
+     40%{    
+          transform: translate(-30% , -300%);
+     }
+     60%{    
+          transform: translate(-70% , -300%);
+     }
+     80%{
+          transform: translate(-70% , 300%);
+     }
+     100%{    
+          transform: translate(-30% , 300%);
+     }
+}  
+@media screen and (max-width : 500px) {
+  .contenaire{
+     width: calc(100% - 20px);
+     height: 90vh;
+     margin-top: 30px;
+      background: linear-gradient(to bottom,  var(--lg_color1) 50% , var(--lg_color2) 50%);
+  }
+  h1{
+     writing-mode: vertical-lr;
+     width: auto;
+     height: 350px;
+     animation: mietsika linear infinite 6s;
+  }
+@keyframes mietsika {
+     0%{
+      transform: translate(300% , -30%);
+     }
+     20%{
+          transform: translate(0% , -30%);
+     }
+     40%{    
+          transform: translate(-300% , -30%);
+     }
+     60%{    
+          transform: translate(-300% , -70%);
+     }
+     80%{
+          transform: translate(300% , -70%);
+     }
+     100%{    
+           transform: translate(300% , -30%);
+     }
+}  
+
+}
+@media screen and (max-width: 150px){
+      .h1{
+          writing-mode: vertical-lr;
+          width: auto;
+          height: 100vh;
+          animation: mietsika linear infinite 10s;
+      }
+     @keyframes mietsika {
+          0%{
+               transform: translate(-50% , -50%);
+          }
+          100%{
+               transform: translate(-50% , -50%);
+          }
+     }
+}
