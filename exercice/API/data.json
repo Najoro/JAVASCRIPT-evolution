@@ -1,0 +1,61 @@
+{
+  "bracketPairColorizer.depreciation-notice": true,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "workbench.startupEditor": "none",
+  "editor.fontFamily": "monospace",
+  "workbench.statusBar.visible": true,
+  "git.suggestSmartCommit": false,
+  "explorer.confirmDelete": false,
+  "diffEditor.renderSideBySide": true,
+  "editor.tabSize": 2,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "[dart]": {
+      "editor.formatOnSave": true,
+      "editor.formatOnType": true,
+      "editor.rulers": [
+          80
+      ],
+      "editor.selectionHighlight": false,
+      "editor.suggest.snippetsPreventQuickSuggestions": false,
+      "editor.suggestSelection": "first",
+      "editor.tabCompletion": "onlySnippets",
+      "editor.wordBasedSuggestions": false
+  },
+  "terminal.integrated.fontWeightBold": "normal",
+  "terminal.integrated.fontWeight": "normal",
+  "editor.fontWeight": "50",
+  "editor.letterSpacing": 0.1,
+  "editor.codeLensFontSize": 0,
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.panel.defaultLocation": "bottom",
+  "markdown.preview.lineHeight": 1.2,
+  "editor.lineHeight": 1.6,
+  "terminal.explorerKind": "external",
+  "terminal.integrated.automationProfile.linux": {
+  },
+  "terminal.integrated.allowMnemonics": true,
+  "window.menuBarVisibility": true,
+  "zenMode.hideActivityBar": true,
+  "workbench.activityBar.visible": true,
+  "terminal.integrated.defaultProfile.linux": "bash",
+  "zenMode.hideStatusBar": false,
+  "window.zoomLevel": -1,
+  "explorer.confirmDragAndDrop": false,
+  "[javascript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "oneDarkPro.bold": false,
+  "workbench.preferredDarkColorTheme": "Visual Studio Dark",
+  "workbench.preferredHighContrastColorTheme": "Abyss",
+  "workbench.preferredHighContrastLightColorTheme": "Default Dark+",
+  "json.schemas": [
+  
+  ],
+  "editor.fontSize": 15
+}
