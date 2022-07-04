@@ -1,3 +1,8 @@
 meal : https://www.themealdb.com/api/json/v1/1/search.php?s=tomato
 user : https://randomuser.me/api/?result%20=%2024
 blague : https://api.blablagues.net/?rub=blagues
+
+api contry
+
+cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/index.json
+cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/by-code.json
